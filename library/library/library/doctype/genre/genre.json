@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:genre_name",
+ "creation": "2025-10-17 10:20:54.006346",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "genre_name",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "genre_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Genre Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Fiction\nNon-Fiction\nEducational / Academic\nChildren & Young Adult\nMagazines / Journals / Periodicals\nMiscellaneous / Other"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-17 12:24:15.305197",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Genre",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

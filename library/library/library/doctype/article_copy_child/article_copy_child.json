@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-17 13:16:25.285665",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "accession_number",
+  "status",
+  "condition",
+  "added_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "accession_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Accession Number",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nIssued\nLost\nDamaged\nReserved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "Condition",
+   "options": "New\nGood\nFair\nPoor"
+  },
+  {
+   "fieldname": "added_date",
+   "fieldtype": "Date",
+   "label": "Added Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-17 13:16:25.285665",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Article Copy Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

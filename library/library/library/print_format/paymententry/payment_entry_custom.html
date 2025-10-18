@@ -1,0 +1,56 @@
+{% extends "templates/print_formats/standard.html" %}
+
+{% block content %}
+<style>
+    .custom-header {
+        text-align: center;
+        color: #0066cc;
+        margin-bottom: 20px;
+    }
+    .details-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .details-table th, .details-table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+</style>
+
+<div class="custom-header">
+    <h2>My Custom Payment Entry Print</h2>
+    <p>Learning Test Format</p>
+</div>
+
+<table class="details-table">
+    <tr>
+        <th>Payment Entry No:</th>
+        <td>{{ doc.name }}</td>
+    </tr>
+    <tr>
+        <th>Party Type:</th>
+        <td>{{ doc.party_type }}</td>
+    </tr>
+    <tr>
+        <th>Party:</th>
+        <td>{{ doc.party }}</td>
+    </tr>
+    <tr>
+        <th>Paid Amount:</th>
+        <td>{{ doc.paid_amount }}</td>
+    </tr>
+    <tr>
+        <th>Mode of Payment:</th>
+        <td>{{ doc.mode_of_payment }}</td>
+    </tr>
+    <tr>
+        <th>Posting Date:</th>
+        <td>{{ doc.posting_date }}</td>
+    </tr>
+</table>
+
+<br>
+
+<p style="text-align:center;">Thank you for testing custom app print format!</p>
+{% endblock %}
