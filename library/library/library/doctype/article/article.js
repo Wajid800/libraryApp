@@ -9,7 +9,7 @@ frappe.ui.form.on('Article', {
 		    frm.set_value("author", "Charles R. Severance");
 		    frm.set_value("isbn", "978-1530051120");
 		    frm.set_value("publisher", "CreateSpace Independent Publishing Platform");
-		    frm.set_value("genre", "Education & Research");
+		    frm.set_value("genre", "Education & Health");
 		})
 	}
 })
